@@ -26,6 +26,7 @@ services:
   app:
     build: book-service
     container_name: my-app
+    restart: unless-stopped
     ports:
       - "8080:8080"
     environment:
